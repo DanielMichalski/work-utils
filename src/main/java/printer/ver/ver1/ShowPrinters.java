@@ -1,11 +1,10 @@
-package ver1;
+package printer.ver.ver1;
 
 import javax.print.*;
 import javax.print.attribute.*;
 import javax.print.attribute.standard.*;
 import java.awt.print.PrinterJob;
 import java.io.*;
-import java.util.Locale;
 
 public class ShowPrinters implements Doc {
     static String PRINTER_NAME = "Godex DT2";

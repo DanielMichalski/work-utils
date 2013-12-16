@@ -1,8 +1,7 @@
-package ver2;
+package printer.ver.ver2;
 
 import javax.print.*;
 import javax.print.attribute.DocAttributeSet;
-import javax.print.attribute.PrintServiceAttributeSet;
 import javax.print.attribute.standard.PrinterStateReason;
 import javax.print.attribute.standard.PrinterStateReasons;
 import javax.print.attribute.standard.Severity;
