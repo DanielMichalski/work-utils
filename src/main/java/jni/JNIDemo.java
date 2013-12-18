@@ -1,4 +1,4 @@
-package native_methods;
+package jni;
 
 /**
  * Author: Daniel

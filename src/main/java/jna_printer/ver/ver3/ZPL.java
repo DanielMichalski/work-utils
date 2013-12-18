@@ -1,4 +1,4 @@
-package printer.ver.ver3;
+package jna_printer.ver.ver3;
 
 import javax.print.*;
 import javax.print.attribute.HashPrintRequestAttributeSet;
@@ -16,7 +16,7 @@ import java.io.InputStream;
  * Author: Daniel
  */
 public class ZPL {
-    private static final String PRINTER_NAME = "Receipt's printer";
+    private static final String PRINTER_NAME = "Receipt's jna_printer";
     // private static final String barcodeString =  "${^XA^FO100,100^BY7^BCN,100,Y,N,N^FD123456^FS^XZ}$";
     private static final String queryString = "${^XSET,ACTIVERESPONSE,1}$";
 
@@ -46,7 +46,7 @@ public class ZPL {
             System.out.println(printService.getAttribute(QueuedJobCount.class).getValue());
 
             if (printService == null) {
-                System.out.println(PRINTER_NAME + " printer not found.");
+                System.out.println(PRINTER_NAME + " jna_printer not found.");
                 return;
             }
 

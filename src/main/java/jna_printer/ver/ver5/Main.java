@@ -8,7 +8,7 @@ import org.cups4j.PrintJob;
  * Author: Daniel
  *//*
 
-public class Main {
+public class EZioLibraryTest {
     public static void main(String[] args) {
 
     }
