@@ -1,5 +1,8 @@
-package jna_printer.ver.ver6;
+package algorithms.palindrom;
 
+/**
+ * Author: Daniel
+ */
 public class Main {
     public static void main(String[] args) {
 

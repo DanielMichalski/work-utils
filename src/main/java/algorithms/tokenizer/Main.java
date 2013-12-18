@@ -1,4 +1,4 @@
-package tokenizer;
+package algorithms.tokenizer;
 
 import java.util.StringTokenizer;
 

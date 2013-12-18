@@ -1,4 +1,4 @@
-package palindrom;
+package algorithms.palindrom;
 
 /**
  * Author: Daniel

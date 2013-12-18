@@ -1,4 +1,4 @@
-package jna_printer.jna;
+package jna.jna;
 
 import com.sun.jna.Native;
 

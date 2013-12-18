@@ -20,7 +20,7 @@ import java.io.InputStream;
  *//*
 
 public class Barcode {
-    private static final String PRINTER_NAME = "Receipt's jna_printer";
+    private static final String PRINTER_NAME = "Receipt's jna";
     // private static final String barcodeString =  "${^XA^FO100,100^BY7^BCN,100,Y,N,N^FD123456^FS^XZ}$";
     private static final String queryString = "${^XSET,ACTIVERESPONSE,1}$";
 
@@ -35,7 +35,7 @@ public class Barcode {
             PrintService printService = findPrintService();
 
             if (printService == null) {
-                System.out.println(PRINTER_NAME + " jna_printer not found.");
+                System.out.println(PRINTER_NAME + " jna not found.");
                 return;
             }
 
@@ -69,9 +69,9 @@ public class Barcode {
         PrintService[] printers = PrintServiceLookup.lookupPrintServices(myFormat, aset);
         PrintService printService = null;
 
-        for (PrintService jna_printer : printers) {
-            if (jna_printer.getName().equalsIgnoreCase(PRINTER_NAME)) {
-                printService = jna_printer;
+        for (PrintService jna : printers) {
+            if (jna.getName().equalsIgnoreCase(PRINTER_NAME)) {
+                printService = jna;
             }
         }
 

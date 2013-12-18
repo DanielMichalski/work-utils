@@ -1,4 +1,4 @@
-package jna_printer.ver.ver1;
+package jna.ver.ver1;
 
 import javax.print.*;
 import javax.print.attribute.*;
@@ -87,7 +87,7 @@ public class ShowPrinters implements Doc {
             String printerStateReason = attributes.get(PrinterStateReason.class).toString();
 
             System.out.println("printerState = " + printerState); // May be IDLE, PROCESSING, STOPPED or UNKNOWN
-            System.out.println("printerStateReason = " + printerStateReason); // If your jna_printer state returns STOPPED, for example, you can identify the reason
+            System.out.println("printerStateReason = " + printerStateReason); // If your jna state returns STOPPED, for example, you can identify the reason
 
             if (printerState.equals(PrinterState.STOPPED.toString())) {
 

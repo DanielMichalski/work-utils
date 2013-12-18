@@ -1,8 +1,5 @@
-package palindrom;
+package jna.ver.ver6;
 
-/**
- * Author: Daniel
- */
 public class Main {
     public static void main(String[] args) {
 
