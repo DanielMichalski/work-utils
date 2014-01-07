@@ -1,4 +1,4 @@
-package jna.jna;
+package jna.ver2;
 
 import com.sun.jna.Library;
 

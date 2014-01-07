@@ -1,4 +1,4 @@
-package jna.jna;
+package jna.ver2;
 
 import com.sun.jna.Native;
 
@@ -32,12 +32,14 @@ public class CheckConnectedPrintersTest {
                 usbId = new String(array).trim();
             }
 
+            eZioLib.closeport();
+
             if (returnedVal == 1) {
-                System.out.println("Connected printer: " + usbId);
+                System.out.println("Connected printer via USB: " + usbId);
+            } else {
+                System.out.println("Disconnected printer via USB: " + usbId);
             }
         }
-
-        eZioLib.closeport();
     }
 
     private void loadNativeLibrary() {
