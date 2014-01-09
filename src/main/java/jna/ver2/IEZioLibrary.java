@@ -11,7 +11,7 @@ public interface IEZioLibrary extends Library {
 
     public int OpenDriver(String printerDriverName);
 
-    public int OpenUSB(String usbID);
+    public int OpenUSB(byte[] usbID);
 
     public int sendcommand(String command);
 
