@@ -61,7 +61,7 @@ public class CheckConnectedPrintersTest {
 
                 if (returnedVal == 1) {
 
-                    //eZioLib.sendcommand("^XSET,ACTIVERESPONSE,1");
+                    eZioLib.sendcommand("^XSET,ACTIVERESPONSE,1");
                     String printerStatusCode = sendCheckCommand(eZioLib);
 
                     System.out.println("printerStatusCode = " + printerStatusCode);;
