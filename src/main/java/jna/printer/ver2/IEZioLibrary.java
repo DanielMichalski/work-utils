@@ -1,4 +1,4 @@
-package jna.ver2;
+package jna.printer.ver2;
 
 import com.sun.jna.Library;
 

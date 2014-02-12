@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN" "jpos/res/jcl.dtd">
+
+
+<JposEntries>
+
+<!--CUSTOM KUBE POS Printer Windows-->
+    
+	<JposEntry logicalName="CUSTOM KUBE POS Printer USB">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.KUBE.CUSTOM_KUBEPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM KUBE POS Printer" url="http://www.custom.biz"/>
+        <prop name="PID" type="String" value="015F"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM KUBE POS Printer"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="portName" type="String" value="USB011"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+
+     <JposEntry logicalName="CUSTOM KUBE POS Printer COM">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.KUBE.CUSTOM_KUBEPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM KUBE POS Printer" url="http://www.custom.biz"/>
+        <prop name="portName" type="String" value="COM1"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM KUBE POS Printer"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="flowControl" type="String" value="Xon/Xoff"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="19200"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+
+<!--CUSTOM VKP80II POS Printer Windows-->
+
+	<JposEntry logicalName="CUSTOM VKP80II POS Printer USB">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VKP80.CUSTOM_VKP80IIPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VKP80II POS Printer" url="http://www.custom.biz"/>
+        <prop name="PID" type="String" value="015d"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VKP80II POS Printer"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="portName" type="String" value="USB003"/>
+        <prop name="logging" type="String" value="Video"/>	  
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+    
+	<JposEntry logicalName="CUSTOM VKP80II POS Printer COM">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VKP80.CUSTOM_VKP80IIPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VKP80II POS Printer" url="http://www.custom.biz"/>
+        <prop name="portName" type="String" value="COM2"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VKP80II POS Printer"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="flowControl" type="String" value="Xon/Xoff"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="115200"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+
+<!--CUSTOM VK80 POS Printer Windows-->
+
+	<JposEntry logicalName="CUSTOM VK80 POS Printer USB">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VK80.CUSTOM_VK80PrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VK80 POS Printer" url="http://www.custom.biz"/>
+        <prop name="PID" type="String" value="01B9"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VK80 POS Printer"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="portName" type="String" value="USB003"/>
+        <prop name="logging" type="String" value="Video"/>	  
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+
+	<JposEntry logicalName="CUSTOM VK80 POS Printer COM">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VK80.CUSTOM_VK80PrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VK80 POS Printer" url="http://www.custom.biz"/>
+        <prop name="portName" type="String" value="COM2"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VK80 POS Printer"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="flowControl" type="String" value="Xon/Xoff"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="115200"/>
+        <prop name="logging" type="String" value="Video"/>	  
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>  	
+
+<!--CUSTOM KUBE POS printer Linux-->
+
+	<JposEntry logicalName="CUSTOM KUBE POS Printer USB Linux">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.KUBE.CUSTOM_KUBEPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM KUBE POS Printer" url="http://www.custom.biz"/>
+        <prop name="PID" type="String" value="015F"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM KUBE POS Printer"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="portName" type="String" value="USB01"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+	
+	<JposEntry logicalName="CUSTOM KUBE POS Printer COM Linux">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.KUBE.CUSTOM_KUBEPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM KUBE POS Printer" url="http://www.custom.biz"/>
+        <prop name="portName" type="String" value="/dev/ttyS0"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM KUBE POS Printer"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="flowControl" type="String" value="Xon/Xoff"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="19200"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+
+<!--CUSTOM VKP80II POS Printer Linux-->
+
+	<JposEntry logicalName="CUSTOM VKP80II POS Printer USB Linux">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VKP80.CUSTOM_VKP80IIPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VKP80II POS Printer" url="http://www.custom.biz"/>
+        <prop name="PID" type="String" value="015d"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VKP80II POS Printer"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="portName" type="String" value="USB001"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+
+	<JposEntry logicalName="CUSTOM VKP80II POS Printer COM Linux">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VKP80.CUSTOM_VKP80IIPrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VKP80II POS Printer" url="http://www.custom.biz"/>
+        <prop name="portName" type="String" value="/dev/ttyS0"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VKP80II POS Printer"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="flowControl" type="String" value="Xon/Xoff"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="115200"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+	
+<!--CUSTOM VK80 POS Printer Linux-->
+
+	<JposEntry logicalName="CUSTOM VK80 POS Printer USB Linux">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VK80.CUSTOM_VK80PrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VK80 POS Printer" url="http://www.custom.biz"/>
+        <prop name="PID" type="String" value="01B9"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VK80 POS Printer"/>
+        <prop name="deviceBus" type="String" value="USB"/>
+        <prop name="portName" type="String" value="USB001"/>
+        <prop name="logging" type="String" value="Video"/>
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>
+	
+	<JposEntry logicalName="CUSTOM VK80 POS Printer COM Linux">
+        <creation factoryClass="custom.services.posprinter.SimpleJPOSServiceInstanceFactory" serviceClass="custom.services.posprinter.VK80.CUSTOM_VK80PrinterService"/>
+        <vendor name="CUSTOM" url="http://www.custom.biz"/>
+        <jpos category="POSPrinter" version="1.8"/>
+        <product description="Jpos printer driver" name="CUSTOM VK80 POS Printer" url="http://www.custom.biz"/>
+        <prop name="portName" type="String" value="/dev/ttyS0"/>
+        <prop name="PhysicalDevice" type="String" value="CUSTOM VK80 POS Printer"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="parity" type="String" value="None"/>
+        <prop name="flowControl" type="String" value="Xon/Xoff"/>
+        <prop name="stopBits" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="RS232"/>
+        <prop name="baudRate" type="String" value="115200"/>
+        <prop name="logging" type="String" value="Video"/>	  
+        <!--CUSTOM PROPERTIES:-->			 
+		<!--PrintTextAutoLF: If true, the driver sends a LF after every PrintNormal or PrintImmediate-->	
+                <prop name="PrintTextAutoLF" type="String" value="true"/>
+		<!--EnableTOStsSignal: If true, and the printer supports it, the driver signals PTR_SUE_REC_CARTRIDGE_EMPTY if the ticket is present on output, otherwise PTR_SUE_REC_CARTDRIGE_OK-->	
+		<prop name="EnableTOStsSignal" type="String" value="false"/>
+
+	</JposEntry>  
+
+</JposEntries>

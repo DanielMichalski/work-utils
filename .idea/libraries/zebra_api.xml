@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="zebra_api">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/lib/commons-io-2.2.jar!/" />
+      <root url="jar://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/lib/commons-net-3.1.jar!/" />
+      <root url="jar://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/lib/gson-2.1.jar!/" />
+      <root url="jar://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/lib/opencsv-2.2.jar!/" />
+      <root url="jar://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/lib/snmp6_1.jar!/" />
+      <root url="jar://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/lib/ZSDK_API.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/documentation" />
+      <root url="file://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/documentation/resources" />
+      <root url="file://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/documentation/com/zebra/sdk" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://C:/Program Files/Zebra Technologies/link_os_sdk/PC/v2.0.5152/demos/src" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,4 +1,4 @@
-package jna.ver.ver2;
+package jna.printer.ver.ver2;
 
 import javax.print.*;
 import javax.print.attribute.DocAttributeSet;

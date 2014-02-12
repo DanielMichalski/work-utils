@@ -1,4 +1,4 @@
-package jna.ver.ver1;
+package jna.printer.ver.ver1;
 
 import javax.print.*;
 import javax.print.attribute.*;

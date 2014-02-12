@@ -1,4 +1,4 @@
-package jna.ver.ver3;
+package jna.printer.ver.ver3;
 
 import javax.print.*;
 import javax.print.attribute.HashPrintRequestAttributeSet;
