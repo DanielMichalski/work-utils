@@ -2,10 +2,14 @@ package algorithms;
 
 import org.junit.Test;
 
+import java.util.Random;
+
 /**
  * Author: Daniel
  */
 public class AnagramTest {
+    public static final int LOOPS = 100000000;
+
     @Test
     public void testIsAnagram1() throws Exception {
 
@@ -13,8 +17,11 @@ public class AnagramTest {
         String text2 = "";
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 100000000; i++) {
-            sb.append("a");
+        for (int i = 0; i < LOOPS; i++) {
+            Random random = new Random();
+            int liczba = random.nextInt(26) + 65;
+            char znak = (char) liczba;
+            sb.append(String.valueOf(znak));
         }
 
         text1 = sb.toString();
@@ -37,8 +44,11 @@ public class AnagramTest {
         String text2 = "";
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 100000000; i++) {
-            sb.append("a");
+        for (int i = 0; i < LOOPS; i++) {
+            Random random = new Random();
+            int liczba = random.nextInt(26) + 65;
+            char znak = (char) liczba;
+            sb.append(String.valueOf(znak));
         }
 
         text1 = sb.toString();

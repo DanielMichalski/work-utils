@@ -64,7 +64,7 @@ public class Anagram {
         Map<Character, Integer> map = new HashMap<>();
 
         for (int i = 0; i < text.length(); i++) {
-            char character = text.charAt(0);
+            char character = text.charAt(i);
 
             if (map.get(character) == null) {
                 map.put(character, 0);
