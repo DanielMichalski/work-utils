@@ -5,15 +5,7 @@ import java.util.Arrays;
 public class Runner {
 
     public static void main(String[] args) {
-        Card[] cards = {
-                new Card(2),
-                new Card(3),
-                new Card(1),
-                new Card(4),
-                new Card(5)
-        };
-
-        Deck deck = new Deck(cards, true);
+        Deck deck = new Deck(true);
 
         Card[] shuffledCards = deck.shuffle();
         System.out.println("---------- Shuffled cards ----------");

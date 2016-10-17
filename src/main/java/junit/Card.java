@@ -1,20 +1,24 @@
 package junit;
 
 public class Card {
-    private int val;
 
-    public Card(int val) {
-        this.val = val;
+    private Suit suit;
+    private Rank rank;
+
+    public Card(Suit suit, Rank rank) {
+        this.suit = suit;
+        this.rank = rank;
     }
 
     public int getVal() {
-        return val;
+        return rank.getValue();
     }
 
     @Override
     public String toString() {
         return "Card{" +
-                "val=" + val +
+                "suit=" + suit +
+                ", rank=" + rank +
                 '}';
     }
 }

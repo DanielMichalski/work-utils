@@ -8,61 +8,46 @@ public class DeckTestJUnit3 extends TestCase {
 
     public void testShouldShuffleCards() throws Exception {
         // given
-        Card[] cards = {
-                new Card(4),
-                new Card(2),
-                new Card(1),
-        };
-        Deck deck = new Deck(cards, true);
+        Deck deck = new Deck(true);
+        int cardsCount = deck.getCardsCount();
 
         // when
         Card[] shuffledCards = deck.shuffle();
 
         // then
         Assert.assertFalse(shuffledCards == null);
-        Assert.assertTrue(shuffledCards.length == cards.length);
+        Assert.assertTrue(shuffledCards.length == cardsCount);
     }
 
     public void testShouldSortCards() throws Exception {
         // given
-        Card firstCard = new Card(2);
-        Card secondCard = new Card(1);
-        Card thirdCard = new Card(4);
-        Card[] cards = {firstCard, secondCard, thirdCard};
-        Deck deck = new Deck(cards, true);
+        Deck deck = new Deck(true);
+        int cardsCount = deck.getCardsCount();
 
         // when
         Card[] sorted = deck.sort();
 
         // then
         Assert.assertNotNull(sorted);
-        Assert.assertTrue(sorted.length == cards.length);
-        Assert.assertEquals(sorted[0], secondCard);
+        Assert.assertTrue(sorted.length == cardsCount);
+        Assert.assertEquals(sorted[0].getVal(), 2);
     }
 
     public void testShouldGetFirstCard() throws Exception {
         // given
-        Card firstCard = new Card(2);
-        Card secondCard = new Card(1);
-        Card thirdCard = new Card(4);
-        Card[] cards = {firstCard, secondCard, thirdCard};
-        Deck deck = new Deck(cards, true);
+        Deck deck = new Deck(true);
 
         // when
         Card first = deck.getFirst();
 
         // then
         Assert.assertNotNull(first);
-        Assert.assertSame(first, firstCard);
+        Assert.assertSame(first.getVal(), 2);
     }
 
     public void testShouldReturnTrueWhenJokerExistsInDeck() throws Exception {
         // given
-        Card firstCard = new Card(2);
-        Card secondCard = new Card(1);
-        Card thirdCard = new Card(4);
-        Card[] cards = {firstCard, secondCard, thirdCard};
-        Deck deck = new Deck(cards, true);
+        Deck deck = new Deck(true);
 
         // when
         boolean hasJoker = deck.isHasJoker();
@@ -73,11 +58,7 @@ public class DeckTestJUnit3 extends TestCase {
 
     public void testShouldReturnFalseWhenJokerExistsInDeck() throws Exception {
         // given
-        Card firstCard = new Card(2);
-        Card secondCard = new Card(1);
-        Card thirdCard = new Card(4);
-        Card[] cards = {firstCard, secondCard, thirdCard};
-        Deck deck = new Deck(cards, false);
+        Deck deck = new Deck(false);
 
         // when
         boolean hasJoker = deck.isHasJoker();
