@@ -30,7 +30,8 @@ public class DeckTestJUnit3 extends TestCase {
         // then
         Assert.assertNotNull(sorted);
         Assert.assertTrue(sorted.length == cardsCount);
-        Assert.assertEquals(sorted[0].getVal(), 2);
+        Assert.assertEquals(sorted[0].getRank(), Rank.TWO);
+        Assert.assertEquals(sorted[0].getSuit(), Suit.SPADES);
     }
 
     public void testShouldGetFirstCard() throws Exception {
@@ -42,7 +43,7 @@ public class DeckTestJUnit3 extends TestCase {
 
         // then
         Assert.assertNotNull(first);
-        Assert.assertSame(first.getVal(), 2);
+        Assert.assertSame(first.getRank(), Rank.TWO);
     }
 
     public void testShouldReturnTrueWhenJokerExistsInDeck() throws Exception {

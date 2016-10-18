@@ -1,6 +1,8 @@
 package junit;
 
-public class Card {
+public class Card implements Comparable<Card> {
+
+    private static final int THE_SAME_VALUE = 0;
 
     private Suit suit;
     private Rank rank;
@@ -10,8 +12,25 @@ public class Card {
         this.rank = rank;
     }
 
-    public int getVal() {
-        return rank.getValue();
+    @Override
+    public int compareTo(Card o) {
+        if (rank != o.rank) {
+            return rank.compareTo(o.getRank());
+        } else {
+            if (rank == Rank.JOKER) {
+                return THE_SAME_VALUE;
+            } else {
+                return suit.compareTo(o.suit);
+            }
+        }
+    }
+
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public Rank getRank() {
+        return rank;
     }
 
     @Override

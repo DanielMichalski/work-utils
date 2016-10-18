@@ -34,7 +34,7 @@ public class DeckTestJUnit4 {
 
         // then
         assertThat(sorted, is(notNullValue()));
-        assertThat(sorted[0].getVal(), is(2));
+        assertThat(sorted[0].getRank(), is(Rank.TWO));
     }
 
     @Test
@@ -47,7 +47,7 @@ public class DeckTestJUnit4 {
 
         // then
         assertThat(first, is(notNullValue()));
-        assertThat(first.getVal(), is(2));
+        assertThat(first.getRank(), is(Rank.TWO));
     }
 
     @Test
